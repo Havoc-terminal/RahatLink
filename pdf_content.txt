@@ -1,0 +1,598 @@
+RAHATLINK
+SMART DISASTER RELIEF INVENTORY OPTIMIZER
+Connecting Relief, Saving Lives
+AI-Powered
+Real-Time
+Verified Data
+Optimized
+Hackathon Project
+AI FOR A BETTER WORLD
+Disaster Relief Tech
+CATEGORY
+Disaster Management & AI
+TECH STACK
+React · FastAPI · PostgreSQL · Leaflet.js
+TEAM
+RahatLink Team
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 2
+■  TABLE OF CONTENTS
+01
+Introduction & Problem Statement
+02
+Solution Overview
+03
+Disaster Verification System
+04
+Priority System
+05
+Complete Website Structure (11 Pages)
+06
+Page-by-Page UI/UX Design
+07
+Interactivity & User Flow
+08
+System Workflow
+09
+Database Design
+10
+API Design
+11
+Algorithm Logic
+12
+Technology Stack
+13
+UI/UX Design Principles
+14
+Conclusion
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 3
+■  01 — INTRODUCTION
+What is RahatLink?
+RahatLink is an intelligent disaster relief platform that connects warehouses and NGOs through real-time location
+data, verified disaster information, and smart allocation logic. It ensures efficient, transparent, and prioritized
+distribution of essential supplies during emergencies.
+■  02 — PROBLEM STATEMENT
+The Core Challenges in Disaster Relief
+Current disaster relief operations are plagued by systemic inefficiencies that cost lives and waste resources.
+#
+Problem
+Impact
+1
+Lack of coordination between stakeholders
+Delayed aid delivery
+2
+Fake or unverified disaster reports
+Resource misallocation
+3
+Delayed response times
+Increased casualties
+4
+Unequal resource distribution
+Underserved critical zones
+5
+No real-time supply-demand visibility
+Operational blindness
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 4
+■  03 — SOLUTION OVERVIEW
+How RahatLink Solves the Problem
+RahatLink provides a unified platform that addresses every gap in the current disaster relief ecosystem through five
+core pillars:
+◆
+Verified Disaster Identification
+A dedicated News Page pulls confirmed disaster updates, ensuring only legitimate zones receive priority status.
+◆
+Priority-Based Allocation
+Disaster zones receive highest priority. Resources flow to the most critical areas first using urgency-based
+sorting.
+◆
+Live Map Visualization
+All warehouses and camps are displayed in real-time on an interactive map with clickable markers and route
+lines.
+◆
+Distance-Based Intelligent Routing
+The system identifies the nearest warehouse to each disaster camp and calculates optimal supply routes.
+◆
+Manual + Automated Distribution
+Coordinators can manually select or trigger the automated optimization engine for system-wide allocation.
+■  04 — DISASTER VERIFICATION SYSTEM
+The News Page is the cornerstone of RahatLink's integrity. It acts as a real-time gate that only allows confirmed
+disaster zones to enter the priority pipeline, preventing misuse of limited resources.
+Feature
+Description
+Dedicated News Page
+Displays curated, verified disaster updates from reliable sources
+Zone Verification
+Only confirmed disaster locations are marked as high-priority zones
+Misuse Prevention
+Unverified requests are blocked from accessing priority resources
+Priority Engine Driver
+Verified zones directly feed into the allocation priority system
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 5
+■  05 — PRIORITY SYSTEM
+Three-Tier Priority Architecture
+TIER
+ZONE TYPE
+CRITERIA
+PRIORITY LEVEL
+1
+Active Disaster Zones
+Verified by News Page
+■  CRITICAL
+2
+High-Urgency Camps
+Urgency flag set by NGO
+■  HIGH
+3
+Standard Relief Areas
+Non-disaster, normal ops
+■  NORMAL
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 6
+■  06 — COMPLETE WEBSITE STRUCTURE
+The platform is composed of 11 interconnected pages, each serving a distinct role:
+#
+Page Name
+Primary Role
+Users
+01
+Landing Page
+Product introduction & entry point
+All
+02
+Role Selection Page
+Choose Warehouse or NGO role
+All
+03
+Location Setup Page
+GPS or manual location entry
+All
+04
+Main Dashboard
+Statistics, charts & system overview
+All
+05
+Map View Page
+Interactive entity visualization
+All
+06
+Warehouse Panel
+Manage & update inventory
+Warehouses
+07
+NGO Panel
+Post and manage needs/requests
+NGOs
+08
+Distribution Page
+Manual supply allocation
+Coordinators
+09
+Optimization Page
+AI-driven auto-allocation engine
+Coordinators
+10
+News Page
+Disaster verification hub
+All
+11
+Analytics Dashboard
+Charts, tables & allocation data
+All
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 7
+■  07 — PAGE-BY-PAGE UI/UX DESIGN
+PAGE 01 — Landing Page
+UI Elements
+Interactions
+■ Dark modern hero section with title 'RahatLink'
+■ Single click CTA navigates to role selection
+■ Tagline: 'Connecting Relief, Saving Lives'
+■ Smooth scroll animations between sections
+■ CTA button: 'Get Started' (prominent, orange)
+■ Hover effects on feature cards
+■ Features overview section with icon cards
+■ System benefits and demo preview cards
+PAGE 02 — Role Selection Page
+UI Elements
+Interactions
+■ Two large centered cards: Warehouse & NGO
+■ Click to select role → data stored in session
+■ Icon + label for each role type
+■ Smooth slide transition to Location Setup
+■ Hover glow effect on cards
+■ Clean minimal layout
+PAGE 03 — Location Setup Page
+UI Elements
+Interactions
+■ Full-screen centered map view
+■ Auto GPS detection places marker on map
+■ 'Detect My Location' GPS button
+■ Location coordinates stored for future routing
+■ Manual address input field below map
+■ Manual input geocodes address to coordinates
+■ Animated location pin marker
+PAGE 04 — Main Dashboard
+UI Elements
+Interactions
+■ Collapsible sidebar navigation
+■ Stat cards update on every allocation
+■ Top stat cards: Total Supply · Total Demand ·
+Alerts
+■ Charts re-render with live data
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 8
+■ Supply vs Demand Bar Chart
+■ Sidebar links navigate between pages
+■ Resource Distribution Pie Chart
+PAGE 05 — Map View Page (CORE)
+UI Elements
+Interactions
+■ Full-screen Leaflet.js interactive map
+■ Click warehouse marker → popup with inventory
+& distance
+■ Warehouse markers (blue pins)
+■ Click camp marker → popup with needs &
+urgency
+■ Camp / NGO markers (red pins)
+■ Select warehouse + camp → draw route line
+■ Disaster zone highlight overlay
+■ Filter buttons: show only warehouses / camps / all
+■ Route line between selected entities
+PAGE 06 — Warehouse Panel
+UI Elements
+Interactions
+■ Add Stock form: Item type + Quantity
+■ Add / Update stock → database updated
+■ Item types: Food, Water, Medical Kits, Essentials
+■ Inventory reflects across Dashboard & Map
+■ Current inventory table with Edit/Delete
+■ Form validation on empty/invalid input
+■ Total stock summary card
+PAGE 07 — NGO Panel
+UI Elements
+Interactions
+■ Post Need form: Item + Quantity + Urgency level
+■ Submit need → enters allocation queue
+■ Urgency: Low / Medium / High / Critical
+■ Urgency level influences priority scoring
+■ Current needs table
+■ Status auto-updates after distribution
+■ Fulfillment status badges
+(Pending/Partial/Fulfilled)
+PAGE 08 — Distribution Page
+UI Elements
+Interactions
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 9
+■ Dropdown: Select Warehouse
+■ Submit → deducts from warehouse stock
+■ Dropdown: Select Camp
+■ Camp need quantity reduced accordingly
+■ Dropdown: Select Item
+■ Dashboard & Analytics updated in real-time
+■ Number input: Quantity
+■ 'Send Supplies' action button
+PAGE 09 — Optimization Page
+UI Elements
+Interactions
+■ 'Optimize Distribution' trigger button
+■ Runs greedy distance + priority algorithm
+■ Algorithm run indicator / loading state
+■ Displays complete allocation plan
+■ Result table: Warehouse → Camp → Item → Qty
+■ One-click to confirm and apply all allocations
+■ Accept / Modify allocation options
+PAGE 10 — News Page (CORE)
+UI Elements
+Interactions
+■ Grid of disaster news cards
+■ Verified disaster cards auto-mark locations as
+priority
+■ Each card: Title · Location · Date · Status badge
+■ Click card to see full disaster details
+■ Verified badge in green, Unverified in grey
+■ Data synced to map overlay and priority engine
+■ Filter: All / Verified / By Region
+PAGE 11 — Analytics Dashboard
+UI Elements
+Interactions
+■ Bar chart: Supply vs Demand by category
+■ Charts auto-refresh on data changes
+■ Pie chart: Resource distribution across camps
+■ Date range filter for historical analysis
+■ Allocations history table
+■ Export to CSV option for coordinators
+■ Remaining stock table · Unfulfilled needs table
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 10
+■  08 — INTERACTIVITY & USER FLOW
+Key Interactive Features
+Feature
+Description
+Trigger
+Real-Time Map Interaction
+Clickable markers with live popup data
+Map click
+Route Visualization
+Animated line between warehouse and camp
+Entity selection
+Dynamic Graph Updates
+Charts re-render after every allocation
+Data change
+Priority Badge System
+Red/Orange/Green badges on map markers
+Zone verification
+Optimization Engine
+One-click full-system allocation run
+Button click
+News Verification Feed
+Disaster cards link directly to priority map
+Card verification
+Role-Based Views
+Dashboard adapts to Warehouse or NGO role
+Login/role select
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 11
+■  09 — SYSTEM WORKFLOW
+End-to-End Operation Flow
+01
+Role Selection
+User visits RahatLink and chooses between Warehouse or NGO role.
+02
+Location Detection
+GPS auto-detect or manual address input stores user coordinates.
+03
+News Page Verification
+Coordinators review disaster news; verified zones marked as high priority.
+04
+Warehouse Inventory Entry
+Warehouse managers add available stock: Food, Water, Medical Kits, Essentials.
+05
+NGO Needs Posting
+Field workers submit needs with item type, quantity, and urgency level.
+06
+Map Entity Visualization
+All warehouses and camps appear as interactive map markers.
+07
+Priority Zone Application
+System flags disaster zones; urgency sorting applied within zones.
+08
+Manual or Automated Distribution
+Coordinators manually allocate or run the optimization engine.
+09
+Allocation Generation
+System generates warehouse → camp → item → quantity allocation plan.
+10
+Dashboard Real-Time Update
+All statistics, charts, and tables update instantly post-allocation.
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 12
+■■  10 — DATABASE DESIGN
+Relational Database Schema (PostgreSQL / Supabase)
+Table
+Key Fields
+Relationships
+users
+id, name, email, role, location_lat, location_lng
+Links to warehouses, camps
+warehouses
+id, user_id, name, lat, lng, address
+Has many inventory items
+inventory
+id, warehouse_id, item_type, quantity, updated_at
+Belongs to warehouse
+camps
+id, user_id, name, lat, lng, is_disaster_zone, urgency
+Has many needs
+needs
+id, camp_id, item_type, quantity, urgency, status
+Belongs to camp
+allocations
+id, warehouse_id, camp_id, item_type, qty, created_at
+References both entities
+news
+id, title, location, lat, lng, is_verified, date
+Links verified zones to camps
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 13
+■  11 — API DESIGN
+FastAPI RESTful Endpoints
+Method
+Endpoint
+Purpose
+POST / GET
+/api/auth/register, /login
+User registration and authentication
+GET / POST
+/api/warehouses
+List or create warehouses
+GET / PUT
+/api/inventory/{warehouse_id}
+Fetch or update warehouse stock
+GET / POST
+/api/camps
+List or register NGO camps
+GET / POST
+/api/needs/{camp_id}
+Fetch or submit camp needs
+POST / GET
+/api/allocations
+Create or view distributions
+POST
+/api/optimize
+Run optimization algorithm
+GET / POST
+/api/news
+Fetch or submit disaster news
+GET
+/api/map/entities
+All map markers with location data
+GET
+/api/analytics/summary
+Dashboard stats and chart data
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 14
+■  12 — ALGORITHM LOGIC
+Smart Allocation Algorithm
+The optimization engine uses a priority-weighted greedy algorithm that sorts camps by disaster status and urgency,
+then matches each camp with the nearest warehouse that has sufficient stock.
+Step 1
+Load &
+Classify
+Load all camps. Flag disaster zones (verified via News Page).
+Mark urgency levels.
+Step 2
+Priority Sort
+Sort camps: (1) Disaster zones first, (2) Urgency level
+descending, (3) Alphabetical tie-break.
+Step 3
+Nearest
+Warehouse
+For each camp, calculate Haversine distance to all warehouses
+with available stock.
+Step 4
+Greedy
+Allocation
+Allocate from the nearest warehouse. Deduct from warehouse
+inventory. Mark need as fulfilled or partial.
+Step 5
+State Update
+After all allocations, update database. Return allocation plan for
+display.
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 15
+■■  13 — TECHNOLOGY STACK
+Frontend
+React (Vite)
+Fast modern frontend build tool
+Tailwind CSS
+Utility-first styling framework
+ShadCN UI
+Accessible component library
+Chart.js
+Bar and pie data visualizations
+Leaflet.js
+Interactive maps with custom markers
+Backend
+FastAPI (Python)
+High-performance async REST API
+Pydantic
+Data validation and schemas
+SQLAlchemy
+ORM for database interaction
+Haversine
+Distance calculation library
+Database & Infra
+PostgreSQL
+Relational database engine
+Supabase
+Managed Postgres + Auth + Storage
+PostGIS
+Geospatial data extensions
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 16
+■  14 — UI/UX DESIGN PRINCIPLES
+Design Philosophy
+◆
+Dark Theme
+Deep #0D1117 background with card panels at #161B22 reduces eye strain during prolonged emergency
+operations.
+◆
+Clean Spacing
+Generous padding and white space ensure readability under stress. No cluttered elements.
+◆
+Card-Based Layout
+Information organized in discrete cards makes scanning quick. Each card has a single clear purpose.
+◆
+Visual Hierarchy
+Font sizes, colors, and weight guide the eye from most to least critical information.
+◆
+Interactive Feedback
+Every action produces visible feedback: button states, loading spinners, success toasts.
+◆
+Minimal & Intuitive
+No training required. Field workers and NGO coordinators can operate the system immediately.
+
+RAHATLINK
+Smart Disaster Relief Inventory Optimizer
+Hackathon Project · AI For A Better World
+Page 17
+■  15 — CONCLUSION
+The RahatLink Vision
+RahatLink is a scalable and intelligent platform that fundamentally transforms disaster response operations. By
+combining verified information pipelines, real-time location intelligence, and an optimized distribution engine,
+RahatLink ensures that critical resources reach the most vulnerable populations quickly and reliably.
+Impact Summary
+Impact Area
+Without RahatLink
+With RahatLink
+Verification
+Fake reports waste resources
+Only verified zones receive priority aid
+Coordination
+Silos between NGOs & warehouses
+Unified real-time platform for all
+Routing
+Manual, distance-unaware allocation
+Nearest warehouse auto-selected
+Speed
+Hours of manual coordination
+Allocation generated in seconds
+Visibility
+No overview of supply-demand
+Live dashboard with full transparency
+Fairness
+Ad-hoc, inequitable distribution
+Priority-based, data-driven allocation
+RahatLink is not just a hackathon project — it is a blueprint for saving lives through
+ technology.
+ Built with compassion. Engineered for impact.
+ 
