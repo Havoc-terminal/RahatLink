@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 During natural disasters and humanitarian crises, relief efforts often suffer from severe logistics bottlenecks: lack of coordination between stakeholders, delayed supply deliveries, imbalanced inventory distribution, and unverified rumors causing misallocation.
 
@@ -17,7 +17,7 @@ During natural disasters and humanitarian crises, relief efforts often suffer fr
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 1. **Greedy Nearest-Neighbor Resource Optimizer**
    - Automatically matches pending relief camp needs with available inventory in neighboring warehouses.
@@ -48,7 +48,7 @@ During natural disasters and humanitarian crises, relief efforts often suffer fr
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **Framework:** React 19 + Vite
@@ -67,7 +67,7 @@ During natural disasters and humanitarian crises, relief efforts often suffer fr
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 RahatLink/
@@ -124,7 +124,7 @@ RahatLink/
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js (v18 or higher) & npm
@@ -170,7 +170,7 @@ The web application will be available at `http://localhost:5173`.
 
 ---
 
-## 🧠 Optimization Algorithm
+##  Optimization Algorithm
 
 The allocation engine solves the supply dispatch problem using a prioritized greedy matching approach:
 
@@ -186,4 +186,3 @@ The allocation engine solves the supply dispatch problem using a prioritized gre
 
 **Saksham Thakur**  
 - GitHub: [@Havoc-terminal](https://github.com/Havoc-terminal)  
-- Email: [cse2510305053saksham@gmail.com](mailto:cse2510305053saksham@gmail.com)
